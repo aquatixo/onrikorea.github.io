@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OnriKorea</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 20px;
+  }
+  .card {
+    display: block;
+    width: 220px;
+    padding: 18px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #1a1a1a;
+  }
+  .card:hover { border-color: #2a5db0; }
+  .card h2 { font-size: 1.05rem; margin: 0 0 6px; }
+  .card p { font-size: 0.85rem; color: #555; margin: 0; }
+  .card.disabled {
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+<nav class="topnav">
+  <a href="index.html" class="brand active">OnriKorea</a>
+  <a href="brands.html">Brands</a>
+</nav>
+
+<h1>Dashboard</h1>
+<p>Internal tools for tracking work.</p>
+
+<div class="cards">
+  <a class="card" href="brands.html">
+    <h2>Brands</h2>
+    <p>1,607 brand candidates — search, and (soon) add new ones with duplicate checking.</p>
+  </a>
+  <a class="card disabled" href="#">
+    <h2>Routines</h2>
+    <p>Coming later.</p>
+  </a>
+  <a class="card disabled" href="#">
+    <h2>Schedules</h2>
+    <p>Coming later.</p>
+  </a>
+</div>
+</body>
+</html>
